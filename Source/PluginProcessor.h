@@ -55,6 +55,12 @@ public:
     void getStateInformation (MemoryBlock& destData) override;
     void setStateInformation (const void* data, int sizeInBytes) override;
 
+	float InputGain; //input gain slider
+	float LeftPan; //mid left pan slider
+	float RightPan; //right side pan slider
+	float StereoWidth; // stereo width slider
+
+
 private:
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MidSideUtilityAudioProcessor)
